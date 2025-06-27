@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/mac/Projects/c#/OOPLR3/bin/Debug/net8.0-ios/iossimulator-arm64/OOPLR3.app/libSystem.Globalization.Native.dylib

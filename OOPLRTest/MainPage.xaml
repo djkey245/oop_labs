@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLRTest.MainPage">
+
+    <Grid>
+        <VerticalStackLayout
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Spacing="20">
+            <Button Text="Laba №9" Clicked="OnButtonAlphaClicked" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Laba №10" Clicked="OnButtonBetaClicked" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Laba №11" Clicked="OnButtonGammaClicked" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Laba №13" Clicked="OnButtonDeltaClicked" WidthRequest="200" HeightRequest="50" />
+            <Button Text="Exit App" Clicked="OnExitAppClicked" WidthRequest="200" HeightRequest="50" />
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLR3.MainPage">
+    <ScrollView>
+
+        <Grid Padding="20"
+              RowSpacing="10"
+              ColumnSpacing="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Default Book" WidthRequest="500" HeightRequest="60"
+                    Clicked="DefaultBookButton_Clicked"
+                    Grid.ColumnSpan="2"/>
+
+
+            <Button Text="Create Default Paper Book" Grid.Row="1" WidthRequest="300" HeightRequest="60"
+                    Grid.Column="0" Clicked="DefaultPaperBookButton_Clicked"/>
+
+            <Button Text="Create Parameterized Paper Book" Grid.Row="1" WidthRequest="300" HeightRequest="60"
+                    Grid.Column="1" Clicked="ParameterizedPaperBookButton_Clicked"/>
+
+            <Button Text="Create Default EBook" Grid.Row="2" WidthRequest="300" HeightRequest="60"
+                    Grid.Column="0" Clicked="DefaultEBookButton_Clicked"/>
+            <Button Text="Create Parameterized EBook" Grid.Row="2" WidthRequest="300" HeightRequest="60"
+                    Grid.Column="1" Clicked="ParameterizedEBookButton_Clicked"/>
+            <Button Text="Show Object Count" Grid.Row="3" WidthRequest="300" HeightRequest="60"
+                    Grid.ColumnSpan="2" Clicked="ShowObjectCountButton_Clicked"/>
+            <Button Text="Exit" Grid.Row="4" WidthRequest="300" HeightRequest="60"
+                    Grid.ColumnSpan="2"
+                    Clicked="ExitButton_Clicked"/>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

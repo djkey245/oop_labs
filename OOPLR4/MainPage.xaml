@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLR4.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Button
+                x:Name="CompareQuantities"
+                Text="Compare the number of letters 'м'"
+                Clicked="CompareQuantities_Click"
+                HorizontalOptions="Fill"/>
+            <Button
+                x:Name="ReplaceQuotes"
+                Text="Replace quotes with two commas"
+                Clicked="ReplaceQuotes_Click"
+                HorizontalOptions="Fill"/>
+            <Button
+                x:Name="ExitBtn"
+                Text="Exit"
+                Clicked="ExitButton_Clicked"
+                HorizontalOptions="Fill"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLRTest.LAB10"
+             Title="LAB10">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="24"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <!-- Варіант і формула -->
+            <Label Text="Варіант 8:" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="S = (∛(2 + cos(x)^2)) / 84 + (5.87 * x) / (∜(3 + cos(y)^2)) + (∛(2 + cos(xy)^2)) / 9;"
+                   FontSize="16" HorizontalOptions="Center" LineBreakMode="WordWrap"/>
+            <!-- Поля для X, Y -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="X:" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Entry x:Name="InputX" Keyboard="Numeric" Placeholder="Введіть X" WidthRequest="120" HorizontalTextAlignment="End" HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Y:" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Entry x:Name="InputY" Keyboard="Numeric" Placeholder="Введіть Y" WidthRequest="120" HorizontalTextAlignment="End" HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+            <!-- Кнопки обчислення -->
+            <HorizontalStackLayout Spacing="20" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Text="Обчислити без функцій" Clicked="OnCalcNoFuncClicked" WidthRequest="200" HorizontalOptions="Center"/>
+                <Button Text="Обчислити з функціями" Clicked="OnCalcFuncClicked" WidthRequest="200" HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+            <!-- Результат -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Результат:" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Entry x:Name="ResultEntry" IsReadOnly="True" WidthRequest="260" HorizontalOptions="Center"/>
+            </HorizontalStackLayout>
+            <!-- Кнопка завершення роботи -->
+            <Button Text="Завершити роботу" Clicked="OnFinishClicked" WidthRequest="200" HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

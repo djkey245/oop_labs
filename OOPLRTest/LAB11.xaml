@@ -1,0 +1,90 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLRTest.LAB11"
+             Title="LAB11">
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="16" VerticalOptions="Center" HorizontalOptions="Center">
+            <!-- Поле памʼяті -->
+            <Label x:Name="MemoryLabel" Text="M: 0" FontSize="14" HorizontalOptions="Center"/>
+            <!-- Поле результату -->
+            <Entry x:Name="ResultEntry" Text="0" FontSize="28" IsReadOnly="True" HorizontalTextAlignment="End" WidthRequest="320" HorizontalOptions="Center"/>
+            <!-- Кнопки памʼяті -->
+            <HorizontalStackLayout Spacing="8" HorizontalOptions="Center">
+                <Button Text="MR" Clicked="OnMRClicked" WidthRequest="60"/>
+                <Button Text="MC" Clicked="OnMCClicked" WidthRequest="60"/>
+                <Button Text="M+" Clicked="OnMPlusClicked" WidthRequest="60"/>
+                <Button Text="M-" Clicked="OnMMinusClicked" WidthRequest="60"/>
+            </HorizontalStackLayout>
+            <!-- Кнопки видалення/обнулення/вимкнення -->
+            <HorizontalStackLayout Spacing="8" HorizontalOptions="Center">
+                <Button Text="OFF" Clicked="OnOffClicked" WidthRequest="60"/>
+                <Button Text="C" Clicked="OnClearClicked" WidthRequest="60"/>
+                <Button Text="⌫" Clicked="OnBackspaceClicked" WidthRequest="60"/>
+            </HorizontalStackLayout>
+            <!-- Основний блок: цифри зліва, операції справа -->
+            <HorizontalStackLayout Spacing="24" HorizontalOptions="Center">
+                <!-- Цифри, +/-, кома -->
+                <Grid ColumnSpacing="8" RowSpacing="8" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- 7 8 9 +/- -->
+                    <Button Grid.Row="0" Grid.Column="0" Text="7" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="0" Grid.Column="1" Text="8" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="0" Grid.Column="2" Text="9" Clicked="OnDigitClicked"/>
+                    <!-- 4 5 6 , -->
+                    <Button Grid.Row="1" Grid.Column="0" Text="4" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="1" Grid.Column="1" Text="5" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="1" Grid.Column="2" Text="6" Clicked="OnDigitClicked"/>
+                    <!-- 1 2 3 0 -->
+                    <Button Grid.Row="2" Grid.Column="0" Text="1" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="2" Grid.Column="1" Text="2" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="2" Grid.Column="2" Text="3" Clicked="OnDigitClicked"/>
+
+                    <Button Grid.Row="3" Grid.Column="0" Text="," Clicked="OnCommaClicked"/>
+                    <Button Grid.Row="3" Grid.Column="1" Text="0" Clicked="OnDigitClicked"/>
+                    <Button Grid.Row="3" Grid.Column="2" Text="+/-" Clicked="OnSignClicked"/>
+
+                </Grid>
+                <!-- Операції -->
+                <Grid ColumnSpacing="8" RowSpacing="8" HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0" Text="+" Clicked="OnOperatorClicked"/>
+                    <Button Grid.Row="0" Grid.Column="1" Text="√" Clicked="OnSqrtClicked"/>
+                    <Button Grid.Row="0" Grid.Column="2" Text="cos" Clicked="OnCosClicked"/>
+
+                    <Button Grid.Row="1" Grid.Column="0" Text="-" Clicked="OnOperatorClicked"/>
+                    <Button Grid.Row="1" Grid.Column="1" Text="%" Clicked="OnPercentClicked"/>
+                    <Button Grid.Row="1" Grid.Column="2" Text="sin" Clicked="OnSinClicked"/>
+
+                    <Button Grid.Row="2" Grid.Column="0" Text="*" Clicked="OnOperatorClicked"/>
+                    <Button Grid.Row="2" Grid.Column="1" Text="1/x" Clicked="OnInverseClicked"/>
+                    <Button Grid.Row="2" Grid.Column="2" Text="tan" Clicked="OnTanClicked"/>
+                    
+                    <Button Grid.Row="3" Grid.Column="0" Text="/" Clicked="OnOperatorClicked"/>
+                    <Button Grid.Row="3" Grid.Column="1" Text="=" Clicked="OnEqualsClicked"/>
+                    <Button Grid.Row="3" Grid.Column="2" Text="ctg" Clicked="OnCotanClicked"/>
+                </Grid>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

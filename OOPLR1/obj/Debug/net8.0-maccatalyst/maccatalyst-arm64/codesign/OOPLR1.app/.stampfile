@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/mac/Projects/c#/OOPLR1/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/mac/Projects/c#/OOPLR1/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/OOPLR1.app

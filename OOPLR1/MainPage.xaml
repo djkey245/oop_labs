@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLR1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Тихіше їде - далі будеш!"
+                Style="{StaticResource Headline}"
+                FontSize="18"
+                TextColor="Green"
+                FontAttributes="Bold"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Button
+                Width="128"
+                x:Name="story1"
+                Text="Історія №1" 
+                Clicked="onShowHistory1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button
+                Width="128"
+                x:Name="story2"
+                Text="Історія №2" 
+                Clicked="onShowHistory2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button
+                Width="128"
+                x:Name="story3"
+                Text="Історія №3" 
+                Clicked="onShowHistory3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button
+                Width="128"
+                x:Name="story4"
+                Text="Історія №4" 
+                Clicked="onShowHistory4"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button
+                Width="128"
+                x:Name="story5"
+                Text="Історія №5" 
+                Clicked="onShowHistory5"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button
+                Width="128"
+                x:Name="close"
+                Text="Закрити" 
+                Clicked="OnExitButtonClicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

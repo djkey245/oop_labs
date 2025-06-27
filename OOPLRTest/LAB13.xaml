@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLRTest.LAB13"
+             Title="LAB13">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="10"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Label Text="Прізвище"/>
+            <Entry x:Name="LastNameEntry" x:FieldModifier="protected" Placeholder="Прізвище" WidthRequest="300" />
+            <Label Text="Імʼя"/>
+            <Entry x:Name="FirstNameEntry" x:FieldModifier="protected" Placeholder="Імʼя" WidthRequest="300" />
+            <Label Text="По-батькові"/>
+            <Entry x:Name="PatronymicEntry" x:FieldModifier="protected" Placeholder="По-батькові" WidthRequest="300" />
+            <Label Text="Дані співробітника" Margin="0,30,0,0"/>
+            <Entry x:Name="EmployeeDataEntry" x:FieldModifier="protected" Placeholder="Дані співробітника" IsEnabled="False" WidthRequest="300" />
+            <Button Text="Завершити роботу" Clicked="OnFinishClicked" WidthRequest="300" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLR2.MainPage">
+    <StackLayout Padding="20" Spacing="20">
+        <Button 
+            x:Name="DefaultConstructorButton"
+            Text="Create Default Book"
+            Clicked="DefaultConstructorButton_Clicked" />
+
+        <Button 
+            x:Name="ParameterizedConstructorButton"
+            Text="Create Parameterized Book"
+            Clicked="ParameterizedConstructorButton_Clicked" />
+
+        <Button 
+            x:Name="ExitButton"
+            Text="Exit"
+            Clicked="ExitButton_Clicked" />
+    </StackLayout>
+</ContentPage>

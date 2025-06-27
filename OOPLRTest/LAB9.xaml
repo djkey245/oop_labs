@@ -1,0 +1,68 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OOPLRTest.LAB9"
+             Title="LAB9">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="32"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <!-- Кнопка завершення роботи -->
+            <Button Text="Завершити роботу" Clicked="OnFinishClicked" WidthRequest="200"/>
+            <!-- Task 1 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="16" WidthRequest="550">
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="Task1" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Додати '?' після кожного символу." FontSize="14" TextColor="Gray" HorizontalOptions="Center"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Рядок для редагування:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="InputEntry1" Placeholder="Введіть текст..." WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                    <Button Text="Опрацювати текст" Clicked="OnProcess1Clicked" WidthRequest="200"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Результат:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="ResultEntry1" IsReadOnly="True" WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Task 2 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="16" WidthRequest="550">
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="Task2" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Видалити всі 'не' з тексту." FontSize="14" TextColor="Gray" HorizontalOptions="Center"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Рядок для редагування:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="InputEntry2" Placeholder="Введіть текст..." WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                    <Button Text="Опрацювати текст" Clicked="OnProcess2Clicked" WidthRequest="200"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Результат:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="ResultEntry2" IsReadOnly="True" WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+            <!-- Інформаційний блок -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="16" WidthRequest="550">
+                <Label Text="C# — це потужна об'єктно-орієнтована мова програмування, і ООП (об'єктно-орієнтоване програмування) є її фундаментальною основою. Використання ООП у C# дозволяє розробникам створювати модульний, гнучкий та легко підтримуваний код, що є критично важливим для великих і складних програм."
+                       FontSize="16" LineBreakMode="WordWrap"/>
+            </Frame>
+            <!-- Task 3 -->
+            <Frame BorderColor="Gray" CornerRadius="10" Padding="16" WidthRequest="550">
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="Task3" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <Label Text="Пошук слова в тексті вище." FontSize="14" TextColor="Gray" HorizontalOptions="Center"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Слово для пошуку:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="InputEntry3" Placeholder="Введіть слово..." WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                    <Button Text="Опрацювати текст" Clicked="OnProcess3Clicked" WidthRequest="200"/>
+                    <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                        <Label Text="Результат:" FontSize="16" VerticalOptions="Center"/>
+                        <Entry x:Name="ResultEntry3" IsReadOnly="True" WidthRequest="260"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage> 
